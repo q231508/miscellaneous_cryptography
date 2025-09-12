@@ -76,13 +76,13 @@ def main():
     cipher = ascii_XOR(c1, c2)
 
     try:
+        discoveredWordLength = 4
 # Pick one: auto or manual
 #   Do you want to guess and check from one wordlist?
 #   Provide the same list as arg 2 and 3!
 #   ex: auto(cipher, guessList, guesslist)
 #***********
-        discoveredWordLength = 4
-        auto(cipher, checkList, checkList) 
+        auto(cipher, guessList, checkList) 
         #manual(cipher, checkList, "world")
         print(cipher)
     except KeyboardInterrupt:
