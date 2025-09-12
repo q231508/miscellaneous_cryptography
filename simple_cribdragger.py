@@ -1,6 +1,6 @@
 from operator import xor
 
-discoveredWordLength = 3
+discoveredWordLength = 3 # Tells the algorithm to only return results if the found word is of length x
 
 def ascii_XOR(c1, c2):
 # XOR two ascii ciphertexts
@@ -36,6 +36,7 @@ def manual(cipher, checkList, guess):
     cribdrag(cipher, guess, checkList, checkList, mode)
     
 def cribdrag(cipher, word, guessList, checkList, mode):
+# Drags our guess across the result of XORing c1 and c2
     wordLength = len(word)
     for x in range(0, len(cipher)-wordLength+1):
         result = ""
@@ -44,6 +45,8 @@ def cribdrag(cipher, word, guessList, checkList, mode):
         check(checkList, result, word, mode)
 
 def check(checkList, result, guess, mode):
+# Prints result of cribdragging our guess
+# Automatic guess only return matching words
     global discoveredWordLength
     match = 0
     for word in checkList:  
@@ -56,7 +59,7 @@ def check(checkList, result, guess, mode):
 def main():
     global discoveredWordLength
     
-    file = "D:/Downloads/cribdrag_wordlist.txt" # File path to wordlist with guess
+    file = "D:/Downloads/cribdrag_wordlist.txt" # File path to wordlist with guesses
     guessList = open(file, 'r').readlines()
 
     file2 = "D:/Downloads/cribdrag_wordlist2.txt" # File path to wordlist we want to check against
@@ -78,7 +81,7 @@ def main():
 #   Provide the same list as arg 2 and 3!
 #   ex: auto(cipher, guessList, guesslist)
 #***********
-        discoveredWordLength = 5
+        discoveredWordLength = 5    
         auto(cipher, checkList, checkList) 
         #manual(cipher, checkList, "world")
         print(cipher)
