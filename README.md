@@ -23,11 +23,12 @@ plaintexts and identifying any parts the look humanly legible. Once we manage to
 
 SO the goal of crib dragging is to piece the plaintexts together by dragging a guess across $m_1 \oplus m_2$ letter by letter and doing:
 
-$guess \oplus (m_1 \oplus m_2)$ 
+$guess \oplus (m_1 \oplus m_2)$
 
-at each new position.
+at each position.
 
-With this, we return to the two ciphertext given in my class. As an optional task, my professor said we could try and decrypt the two cipher texts to find the plaintexts. As such, I have created a simple crib dragger that
+With this, we return to the two ciphertexts given in my class. It was only a passing comment, but my professor said we could try and decrypt the two cipher texts
+to find the plaintext messages in our own time. As such, I have created a simple crib dragger that
 can both automatically and manually check for words in the XOR result of the two ciphertexts. 
 
 I have only ensured base functionality due to time constraints from other academic commitments. The algorithm has not been robustly reinforced nor extensively tested.
