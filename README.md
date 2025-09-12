@@ -30,6 +30,5 @@ at each new position.
 With this, we return to the two ciphertext given in my class. As an optional task, my professor said we could try and decrypt the two cipher texts to find the plaintexts. As such, I have created a simple crib dragger that
 can both automatically and manually check for words in the XOR result of the two ciphertexts. 
 
-Since this algorithm  was entirely self motivated, not for marks, and only to help solidify course concepts, I have only ensured base functionality due to other
-academic commitments. It solves the hex encoded ciphertexts, as well as an ASCII encoded set of ciphertexts i provided, but it has not been robustly tested.
+I have only ensured base functionality due to time constraints from other academic commitments. The algorithm has not been robustly reinforced nor extensively tested.
 
