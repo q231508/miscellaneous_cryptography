@@ -81,7 +81,7 @@ def main():
 #   Provide the same list as arg 2 and 3!
 #   ex: auto(cipher, guessList, guesslist)
 #***********
-        discoveredWordLength = 5    
+        discoveredWordLength = 4
         auto(cipher, checkList, checkList) 
         #manual(cipher, checkList, "world")
         print(cipher)
